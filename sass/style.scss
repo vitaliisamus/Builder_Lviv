@@ -50,4 +50,126 @@ header {
       }
     }
   }
+  .bloc_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    height: 80px;
+    margin: auto;
+    .logo {
+      a {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        color: #FF9900;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+
+    nav {
+      ul {
+        li {
+          padding: 0 28px;
+          a {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #FFF;
+            text-decoration: none;
+            letter-spacing: 0.07em;
+          }
+
+          a:hover {
+            color: #FF9900;
+            border-bottom: 3px solid #FF9900;
+          }
+        }
+      }
+    }
+
+    button {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #FF9900;
+      background: none;
+      border: 2px solid #FF9900;
+      box-sizing: border-box;
+      padding: 8px 11px;
+    }
+
+    button:hover {
+      border: 2px solid #FF9900;
+    }
+  }
+
+  .content {
+    margin-top: 136px;
+    margin-bottom: 248px;
+    h1 {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 139.4%;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+    }
+
+    p {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 139.4%;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      margin: 29px 0 71px;
+    }
+
+    button {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #FFFFFF;
+      background: #FF9900;
+      border: none;
+      padding: 11px;
+    }
+  }
+  .our_perevagis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 169px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(26px);
+    padding: 0 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.46);
+    .perevagi {
+      width: 175px;
+      p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+      }
+    }
+  }
 }
