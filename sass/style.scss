@@ -150,6 +150,7 @@ header {
       padding: 11px;
     }
   }
+
   .our_perevagis {
     display: flex;
     align-items: center;
@@ -172,4 +173,93 @@ header {
       }
     }
   }
+}
+
+h4 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #FF9900;
+}
+
+.about_us {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  margin: 0 auto;
+  .blokc-left {
+    width: 37%;
+    background: url(/img/bsckground__about_us.png) no-repeat bottom right;
+    block-size: 100%;
+    height: 754px;
+    position: relative;
+    .experience {
+      width: 238px;
+      display: inline-block;
+      background: #FFB800;
+      mix-blend-mode: normal;
+      padding: 34px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      span {
+        font-size: 70px;
+        color: #FFF;
+      }
+
+      p {
+        font-size: 36px;
+        color: #FFF;
+      } 
+    }
+  }
+  .blokc-right {
+    width: 63%;
+    background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
+    padding: 148px 10% 0 187px;
+    h4 {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 139.4%;
+      letter-spacing: 9.7px;
+      text-transform: uppercase;
+      color: #FF9900;
+    }
+
+    h2 {
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 139.4%;
+      letter-spacing: 0.2px;
+      color: #000000;
+      margin-bottom: 27px;
+    }
+
+    p {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 139.4%;
+      letter-spacing: 0.2px;
+      color: #7C7C7C;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.stages_of_work {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  margin: 0 auto;
+  flex-flow: column;
 }
