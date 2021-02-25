@@ -75,8 +75,45 @@ header {
   margin: 0 auto;
 }
 /* line 13, ../sass/style.scss */
-header .header__contact {
+header .header__contacts {
+  display: flex;
+  align-items: center;
   height: 54px;
   background: rgba(0, 0, 0, 0.31);
   color: #FFF;
+}
+/* line 19, ../sass/style.scss */
+header .header__contacts .contacts {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+/* line 23, ../sass/style.scss */
+header .header__contacts .contacts .cellphones {
+  display: flex;
+}
+/* line 25, ../sass/style.scss */
+header .header__contacts .contacts .cellphones .cellphone {
+  font-family: Gilroy;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  padding: 0 24px;
+}
+/* line 40, ../sass/style.scss */
+header .header__contacts .contacts .social {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+/* line 45, ../sass/style.scss */
+header .header__contacts .contacts .social ul li {
+  float: left;
+  margin: 0 0 0 22px;
 }
