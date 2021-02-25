@@ -254,13 +254,23 @@ h4 {
 }
 
 /* line 189, ../sass/style.scss */
+h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+}
+
+/* line 199, ../sass/style.scss */
 .about_us {
   display: flex;
   justify-content: space-between;
   width: 1440px;
   margin: 0 auto;
 }
-/* line 194, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .about_us .blokc-left {
   width: 37%;
   background: url(/img/bsckground__about_us.png) no-repeat bottom right;
@@ -268,7 +278,7 @@ h4 {
   height: 754px;
   position: relative;
 }
-/* line 200, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .about_us .blokc-left .experience {
   width: 238px;
   display: inline-block;
@@ -279,45 +289,28 @@ h4 {
   right: 0;
   bottom: 0;
 }
-/* line 209, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .about_us .blokc-left .experience span {
   font-size: 70px;
   color: #FFF;
 }
-/* line 214, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .about_us .blokc-left .experience p {
   font-size: 36px;
   color: #FFF;
 }
-/* line 220, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .about_us .blokc-right {
   width: 63%;
   background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
   padding: 148px 10% 0 187px;
 }
-/* line 224, ../sass/style.scss */
-.about_us .blokc-right h4 {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 139.4%;
-  letter-spacing: 9.7px;
-  text-transform: uppercase;
-  color: #FF9900;
-}
 /* line 235, ../sass/style.scss */
 .about_us .blokc-right h2 {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 139.4%;
-  letter-spacing: 0.2px;
   color: #000000;
   margin-bottom: 27px;
 }
-/* line 246, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .about_us .blokc-right p {
   font-family: Gilroy;
   font-style: normal;
@@ -329,11 +322,39 @@ h4 {
   margin-bottom: 1em;
 }
 
-/* line 259, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .stages_of_work {
   display: flex;
   justify-content: space-between;
   width: 1440px;
   margin: 0 auto;
   flex-flow: column;
+  background: #000000;
+  padding: 65px 168px 126px;
+  color: #ffffff;
+}
+/* line 262, ../sass/style.scss */
+.stages_of_work .stages {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 265, ../sass/style.scss */
+.stages_of_work .stages .stage_number {
+  width: 66px;
+  height: 66px;
+  border: 1px solid #7C7C7C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+/* line 272, ../sass/style.scss */
+.stages_of_work .stages .stage_number p {
+  text-align: center;
+  width: 100%;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
 }

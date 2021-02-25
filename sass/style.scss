@@ -186,6 +186,16 @@ h4 {
   color: #FF9900;
 }
 
+h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+
+}
+
 .about_us {
   display: flex;
   justify-content: space-between;
@@ -221,24 +231,8 @@ h4 {
     width: 63%;
     background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
     padding: 148px 10% 0 187px;
-    h4 {
-      font-family: Gilroy;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 139.4%;
-      letter-spacing: 9.7px;
-      text-transform: uppercase;
-      color: #FF9900;
-    }
 
     h2 {
-      font-family: Playfair Display;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 40px;
-      line-height: 139.4%;
-      letter-spacing: 0.2px;
       color: #000000;
       margin-bottom: 27px;
     }
@@ -262,4 +256,29 @@ h4 {
   width: 1440px;
   margin: 0 auto;
   flex-flow: column;
+  background: #000000;
+  padding: 65px 168px 126px;
+  color: #ffffff;
+  .stages {
+    display: flex;
+    justify-content: space-between;
+    .stage_number {
+      width: 66px;
+      height: 66px;
+      border: 1px solid #7C7C7C;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      p {
+        text-align: center;
+        width: 100%;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
 }
