@@ -259,13 +259,26 @@ h2 {
   background: #000000;
   padding: 65px 168px 126px;
   color: #ffffff;
-  .stages {
+  .stages_number {
     display: flex;
     justify-content: space-between;
+    .stage {
+      width: 160px;
+      p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        line-height: 1.5;
+      }
+    }
     .stage_number {
       width: 66px;
       height: 66px;
       border: 1px solid #7C7C7C;
+      margin-top: 95px;
+      margin-bottom: 29px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -278,6 +291,85 @@ h2 {
         font-size: 40px;
         line-height: 139.4%;
         letter-spacing: 0.2px;
+      }
+    }
+  }
+}
+
+.portfolio {
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 100px;
+  h4, h2 {
+    text-align: center;
+  }
+
+  .works {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about_the_project {
+      width: 41%;
+      margin-left: 168px;
+      h5 {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #000000;
+      }
+
+      p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #000000;
+        margin-top: 14px;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .our_works__slider {
+      width: 646px;
+      display: flex;
+      .img_slider {
+        width: 541px;
+        float: right;
+        background-color: #ffb800;
+      }
+      .slider_nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #FFB800;
+        height: 94px;
+        ul {
+          li {
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: 50%;
+            float: left;
+            margin: 0 10px;
+            .active {
+              width: 9px;
+              height: 9px;
+              background: #fff;
+            }
+          }
+        }
+        button {
+          background: none;
+          border: none;
+          margin: 0 28px;
+        }
       }
     }
   }
