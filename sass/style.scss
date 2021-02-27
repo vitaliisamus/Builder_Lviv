@@ -121,6 +121,7 @@ header {
       border: 2px solid #FF9900;
       box-sizing: border-box;
       padding: 8px 11px;
+      cursor: pointer;
     }
 
     button:hover {
@@ -167,6 +168,7 @@ header {
       background: #FF9900;
       border: none;
       padding: 11px;
+      cursor: pointer;
     }
   }
 
@@ -778,6 +780,7 @@ h2 {
       background-color: #fff;
       border: none;
       color: #FF9900;
+      cursor: pointer;
     }
   }
 }
