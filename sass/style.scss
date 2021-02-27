@@ -161,7 +161,10 @@ header {
     padding: 0 80px;
     border-top: 1px solid rgba(255, 255, 255, 0.46);
     .perevagi {
-      width: 175px;
+      width: 15%;
+      position: relative;
+      display: flex;
+      align-items: center;
       p {
         font-family: Gilroy;
         font-style: normal;
@@ -170,6 +173,11 @@ header {
         line-height: 139.4%;
         letter-spacing: 0.2px;
         color: #FFFFFF;
+        width: 90%;
+      }
+      svg {
+        position: absolute;
+        right: 0;
       }
     }
   }
@@ -216,6 +224,13 @@ h2 {
       position: absolute;
       right: 0;
       bottom: 0;
+      .number_of_years {
+        font-size: 55px;
+        span {
+          font-size: 70px;
+          color: #FFF;
+        }
+      }
       span {
         font-size: 70px;
         color: #FFF;
