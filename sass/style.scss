@@ -121,6 +121,7 @@ header {
       border: 2px solid #FF9900;
       box-sizing: border-box;
       padding: 8px 11px;
+      cursor: pointer;
     }
 
     button:hover {
@@ -167,6 +168,7 @@ header {
       background: #FF9900;
       border: none;
       padding: 11px;
+      cursor: pointer;
     }
   }
 
@@ -440,16 +442,9 @@ h2 {
         display: flex;
         align-items: center;
         width: 100%;
-        .stage_number {
-          margin-top: 15px;
-          margin-bottom: 15px;
-          border: none;
-          p {
-            font-size: 40px;
-          }
-        }
         p {
           font-size: 18px;
+          max-width: 190px;
         }
       }
     }
