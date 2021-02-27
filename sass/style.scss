@@ -175,10 +175,6 @@ header {
       appearance: button;
   
       text-decoration: none;
-      color: initial;
-    }
-
-    a {
       font-weight: bold;
       font-size: 16px;
       line-height: 19px;
@@ -189,10 +185,6 @@ header {
       background: #FF9900;
       border: none;
       padding: 11px;
-      cursor: pointer;
-      a {
-        color: #FFFFFF;
-      }
     }
   }
 
@@ -234,6 +226,7 @@ header {
       display: none;
     }
     
+
     nav {
       display: none;
     }
