@@ -199,7 +199,7 @@ h2 {
 .about_us {
   display: flex;
   justify-content: space-between;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   .blokc-left {
     width: 37%;
@@ -250,16 +250,56 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+    .about_us {
+      .blokc-right {
+      width: 63%;
+      background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
+      padding: 148px 10% 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px)  {
+  .about_us {
+    flex-flow: column;
+    .blokc-left{
+      background-size: 100%;
+      block-size: 100%;
+      height: 210px;
+      width: 100%;
+      position: absolute;
+      background: none;
+    }
+    .blokc-right {
+      width: 100%;
+      background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
+    }
+  }
+}
+
+@media only screen and (max-width:574px)  {
+  .about_us {
+    .blokc-left {
+      display: none;
+    }
+
+    .blokc-right {
+      padding: 100px 10% 45px;
+    }
+  }
+}
+
 .stages_of_work {
   display: flex;
   justify-content: space-between;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   flex-flow: column;
   background: #000000;
   padding: 65px 168px 126px;
   color: #ffffff;
-  .stages_number {
+  .stages_numbers {
     display: flex;
     justify-content: space-between;
     .stage {
@@ -276,13 +316,15 @@ h2 {
     .stage_number {
       width: 66px;
       height: 66px;
-      border: 1px solid #7C7C7C;
       margin-top: 95px;
       margin-bottom: 29px;
       border-radius: 50%;
       display: flex;
       align-items: center;
+      border: 1px solid #fff;
       p {
+        border-radius: 50%;
+        border:20px solid transparent;
         text-align: center;
         width: 100%;
         font-family: Playfair Display;
@@ -291,6 +333,35 @@ h2 {
         font-size: 40px;
         line-height: 139.4%;
         letter-spacing: 0.2px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:750px) {
+  .stages_of_work {
+    padding: 65px 4% 76px;
+    h4, h2 {
+      text-align: center;
+    }
+    .stages_numbers {
+      flex-flow: column;
+      margin-top: 40px;
+      .stage {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .stage_number {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          border: none;
+          p {
+            font-size: 40px;
+          }
+        }
+        p {
+          font-size: 18px;
+        }
       }
     }
   }
