@@ -408,8 +408,16 @@ h2 {
   padding: 65px 168px 126px;
   color: #ffffff;
   .stages_numbers {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    .stage_line {
+      border-bottom: 3px solid #fff;
+      width: 91%;
+      margin: 0 24px;
+      position: absolute;
+      top: 60px;
+    }
     .stage {
       width: 160px;
       p {
@@ -460,6 +468,16 @@ h2 {
     .stages_numbers {
       flex-flow: column;
       margin-top: 40px;
+      .stage_line {
+        border-bottom: 3px solid #fff;
+        width: 3px;
+        margin: 0 24px;
+        background-color: white;
+        height: 80%;
+        position: absolute;
+        top: 60px;
+        left: 35px;
+      }
       .stage {
         display: flex;
         align-items: center;
