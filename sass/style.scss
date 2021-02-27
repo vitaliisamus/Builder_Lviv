@@ -6,9 +6,8 @@
 @import "compass/reset";
 
 header {
-  background: url(/img/background__header.png) no-repeat;
-  background-size: 100%;
-  width: 1440px;
+  background: url(/img/background__header.png) no-repeat center;
+  max-width: 1440px;
   margin: 0 auto;
   .header__contacts {
     display: flex;
@@ -57,6 +56,7 @@ header {
     max-width: 1280px;
     height: 80px;
     margin: auto;
+    padding: 0 4%;
     .logo {
       a {
         font-family: Gilroy;
@@ -70,9 +70,15 @@ header {
     }
 
     nav {
+      width: 600px;
       ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
         li {
-          padding: 0 28px;
           a {
             font-family: Gilroy;
             font-style: normal;
@@ -181,6 +187,10 @@ header {
       }
     }
   }
+}
+
+@media only screen and (max-width:920px) {
+
 }
 
 h4 {
@@ -383,9 +393,10 @@ h2 {
 }
 
 .portfolio {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 100px;
+  background: url(/img/background__portfolio.png) no-repeat 260px  bottom ;
   h4, h2 {
     text-align: center;
   }
@@ -394,9 +405,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
     .about_the_project {
       width: 41%;
-      margin-left: 168px;
+      margin: 0 20px 0 150px;
       h5 {
         font-family: Gilroy;
         font-style: normal;
@@ -419,17 +431,32 @@ h2 {
         span {
           font-weight: 700;
         }
+        sup {
+          font-size: 12px;
+        }
       }
     }
 
     .our_works__slider {
-      width: 646px;
+      width: 48%;
       display: flex;
-      .img_slider {
-        width: 541px;
-        float: right;
-        background-color: #ffb800;
+      .imgs_slider {
+        margin-right: 3px;
+        width: 102px;
       }
+
+      .block_slid {
+        display: flex;
+        flex-flow: column;
+        width: 865px;
+        float: right;
+        .img_slider {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      
       .slider_nav {
         display: flex;
         justify-content: space-evenly;
@@ -451,10 +478,60 @@ h2 {
             }
           }
         }
+    
         button {
           background: none;
           border: none;
           margin: 0 28px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .portfolio {
+    .works {
+      .about_the_project {
+        width: 41%;
+        margin: 0 2% 0 8%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .portfolio {
+    .works {
+      flex-direction: column;
+      .about_the_project {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .portfolio {
+    .works {
+      .about_the_project {
+        width: 100%;
+        padding: 0 4%;
+        margin: 0;
+      }
+
+      .our_works__slider {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        .imgs_slider {
+          width: 100%;
+        }
+
+        .block_slid {
+          width: 100%;
         }
       }
     }
