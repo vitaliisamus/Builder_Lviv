@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
   <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script defer type="module" src="./js/slider-setup.js" ></script>
   <title>Document</title>
 </head>
 <body>
@@ -224,23 +227,41 @@
   </section>
   <section class="reviews">
     <div class="slider">
+      <h4>Відгуки</h4>
+      <h2>Що про нас говорять наші клієнти</h2>
+
       <div class="comments">
-        <div class="comment_1">
-          <h4>Відгуки</h4>
-          <h2>Що про нас говорять наші клієнти</h2>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu.</p>
+          <span>Елена Филонова, Львів</span>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu.</p>
+          <span>Елена Филонова, Львів</span>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu.</p>
+          <span>Елена Филонова, Львів</span>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu.</p>
+          <span>Елена Филонова, Львів</span>
+        </div>
+        <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu.</p>
           <span>Елена Филонова, Львів</span>
         </div>
       </div>
       <div class="slider_buttons">
-        <a href="#">&lsaquo;</a>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <a id="comments_prev">&lsaquo;</a>
+        <ul id="comments-navcontainer" aria-label="Comments Pagination">
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
         </ul>
-        <a href="#">&rsaquo;</a>
+        <a id="comments_next">&rsaquo;</a>
       </div>
     </div>
   </section>
