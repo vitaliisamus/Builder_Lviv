@@ -2,7 +2,7 @@ const commentsSlider = tns({
   container: '.comments',
   items: 1,
   slideBy: 1,
-  autoplay: true,
+  autoplay: false,
   autoplayButtonOutput: false,
   autoplayHoverPause: true,
   mouseDrag: true,

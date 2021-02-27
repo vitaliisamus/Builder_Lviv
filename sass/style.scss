@@ -505,6 +505,7 @@ h2 {
       width: 180px;
       margin: auto;
       a {
+        cursor: pointer;
         text-decoration: none;
         background: none;
         border: none;
@@ -518,6 +519,11 @@ h2 {
       }
       
       ul {
+        .tns-nav-active {
+          background: #FF9900;
+          width: 9px;
+          height: 9px;
+        }
         li {
           width: 6px;
           height: 6px;
@@ -525,11 +531,7 @@ h2 {
           border-radius: 50%;
           float: left;
           margin: 0 10px;
-          .active {
-            width: 9px;
-            height: 9px;
-            background: #fff;
-          }
+          cursor: pointer;
         }
       }
     }
