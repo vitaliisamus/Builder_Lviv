@@ -464,6 +464,10 @@ h2 {
         background: #FFB800;
         height: 94px;
         ul {
+          .tns-nav-active {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(255, 153, 0, 0.43);
+          }
           li {
             width: 6px;
             height: 6px;
@@ -471,11 +475,7 @@ h2 {
             border-radius: 50%;
             float: left;
             margin: 0 10px;
-            .active {
-              width: 9px;
-              height: 9px;
-              background: #fff;
-            }
+            cursor: pointer;
           }
         }
     
@@ -483,6 +483,7 @@ h2 {
           background: none;
           border: none;
           margin: 0 28px;
+          cursor: pointer;
         }
       }
     }
