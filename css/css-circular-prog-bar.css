@@ -24,12 +24,11 @@
 }
 /* Text inside the control */
 .progress-circle span {
-   position: absolute;
-   line-height: 5em;
-   width: 5em;
-   text-align: center;
-   display: block;
-   z-index: 2;
+  position: absolute;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
 }
 .left-half-clipper { 
   /* a round circle */
