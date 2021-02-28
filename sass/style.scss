@@ -1,11 +1,11 @@
 $base-color: #FF9900;
 $background-color: #FFB800;
-$max-w-monitors: 1440px;
-$w-cont: 1280px;
+$max-width: 1440px;
+$max-content-width: 1280px;
 
 @import "compass/reset";
 @font-face {
-  font-family: "Gilroy Bold"; /* Имя шрифта */
+  font-family: "Gilroy Bold";
   src: url(../fonts/Gilroy-Bold.ttf);
 }
 @font-face {
@@ -23,7 +23,7 @@ html {
 
 header {
   background: url(/img/background__header.png) no-repeat;
-  max-width: $max-w-monitors;
+  max-width: $max-width;
   margin: 0 auto;
   .header__contacts {
     display: flex;
@@ -33,7 +33,7 @@ header {
     color: #FFF;
     margin: auto;
     .contacts_social {
-      width: $w-cont;
+      width: $max-content-width;
       display: flex;
       justify-content: flex-end;
       padding: 0 4%;
@@ -77,7 +77,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: $w-cont;
+    max-width: $max-content-width;
     height: 80px;
     margin: auto;
     padding: 0 4%;
@@ -145,7 +145,7 @@ header {
   }
 
   .header_container {
-    max-width: $w-cont;
+    max-width: $max-content-width;
     margin: auto;
     padding: 0 4%;
     .row {
@@ -243,7 +243,7 @@ header {
       background: #0000004a;
       justify-content: space-between;
       align-items: center;
-      max-width: $w-cont;
+      max-width: $max-content-width;
       height: 80px;
       margin: auto;
       padding: 0 4%;
@@ -301,7 +301,7 @@ h2 {
 .about_us {
   display: flex;
   justify-content: space-between;
-  max-width: $max-w-monitors;
+  max-width: $max-width;
   margin: 0 auto;
   .blokc-left {
     width: 37%;
@@ -400,7 +400,7 @@ h2 {
 .stages_of_work {
   display: flex;
   justify-content: space-between;
-  max-width: $max-w-monitors;
+  max-width: $max-width;
   margin: 0 auto;
   flex-flow: column;
   background: #000000;
@@ -495,7 +495,7 @@ h2 {
 }
 
 .portfolio {
-  max-width: $max-w-monitors;
+  max-width: $max-width;
   margin: 0 auto;
   padding-top: 100px;
   background: url(/img/background__portfolio.png) no-repeat 260px  bottom ;
@@ -532,6 +532,7 @@ h2 {
         }
         sup {
           font-size: 12px;
+          vertical-align: super;
         }
       }
     }
@@ -646,7 +647,7 @@ h2 {
 }
 
 .reviews {
-  max-width: $max-w-monitors;
+  max-width: $max-width;
   margin: 0 auto;
   background:url(../img/background_reviews.png) no-repeat center;
   .slider {
@@ -765,7 +766,7 @@ h2 {
 
 #contact-us {
   background: $background-color;
-  max-width: $max-w-monitors;
+  max-width: $max-width;
   margin: 0 auto;
   padding: 45px 0 52px;
   color: #FFFFFF;
@@ -860,7 +861,7 @@ h2 {
 }
 
 footer {
-  max-width: $max-w-monitors;
+  max-width: $max-width;
   margin: 0 auto;
   background-color: #000;
   padding: 114px 0 0;
@@ -938,7 +939,7 @@ footer {
     padding: 14px 0 16px;
     margin-top: 90px;
     .container {
-      width: $w-cont;
+      width: $max-content-width;
       margin: 0 0px 0 160px;
     }
   }
