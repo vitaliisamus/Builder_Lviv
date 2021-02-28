@@ -21,6 +21,8 @@ html {
   scroll-behavior: smooth;
 }
 
+#mobile-menu { display: none; }
+
 header {
   background: url(/img/background__header.png) no-repeat;
   max-width: $max-width;
@@ -94,7 +96,6 @@ header {
 
     nav {
       width: 600px;
-      #mobile-menu { display: none; }
       #nav_items {
         display: flex;
         flex-wrap: wrap;
@@ -240,7 +241,11 @@ header {
       max-width: $max-content-width;
       height: 80px;
       margin: auto;
-      padding: 0 4%;
+      padding: 0;
+
+      .logo {
+        margin-left: 4%;
+      }
 
       label { 
         display: inline-block; 
@@ -249,16 +254,27 @@ header {
         font-style: normal;
         font-size: 35px;
         padding: 0;
+        margin-right: 4%;
       }
       
-      nav {
-        /* Break down menu items into vertical */
+      #menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 82px;
+        background: black;
+        height: 100vh;
         #nav_items {
-          position: absolute;
+          width: 100%;
+          display: flex;
+          flex-flow: column;
           li {
+            border-top: 1px solid #fff;
             a {
-              width: 20%; /* 100% / 5 tabs = 20% */
-              padding: 10px;
+              display: block;
+              font-size: 22px;
+              width: 100%;
+              padding: 20px 0;
               color: white;
               text-decoration: none;
               text-align: center;
@@ -267,9 +283,8 @@ header {
         }
       
         /* Toggle Show/Hide Menu */
-        #nav_items { display: none; }
       }
-      #mobile-menu:checked ~ #nav_items { display: block; }
+      #mobile-menu:checked ~ #menu { display: block; }
     }
     .our_perevagis {
       padding: 0 20px;
