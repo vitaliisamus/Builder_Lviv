@@ -531,6 +531,7 @@ h2 {
   margin: 0 auto;
   padding-top: 100px;
   background: url(/img/background__portfolio.png) no-repeat 260px  bottom ;
+  background-position: center 422px;
   h4, h2 {
     text-align: center;
   }
@@ -721,6 +722,10 @@ h2 {
       align-items: center;
       width: 180px;
       margin: auto;
+      #comments-navcontainer {
+        display: flex;
+        align-items: center;
+      }
       a {
         cursor: pointer;
         text-decoration: none;
