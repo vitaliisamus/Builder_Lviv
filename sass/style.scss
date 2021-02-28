@@ -73,7 +73,7 @@ header {
       }
     }
   }
-  .bloc_nav {
+  .block_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +94,8 @@ header {
 
     nav {
       width: 600px;
-      ul {
+      #mobile-menu { display: none; }
+      #nav_items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -118,7 +119,7 @@ header {
       }
     }
 
-    button {
+    #order-a-call {
       font-family: Gilroy;
       font-weight: bold;
       font-size: 16px;
@@ -135,13 +136,11 @@ header {
       cursor: pointer;
     }
 
-    button:hover {
+    #order-a-call:hover {
       border: 2px solid $base-color;
     }
 
-    #mobile-menu {
-      display: none;
-    }
+    label { display: none; }
   }
 
   .header_container {
@@ -228,17 +227,12 @@ header {
     .header__contacts {
       display: none;
     }
-    
-
-    nav {
-      display: none;
-    }
 
     #order-a-call {
       display: none;
     }
 
-    .bloc_nav {
+    .block_nav {
       display: flex;
       background: #0000004a;
       justify-content: space-between;
@@ -247,12 +241,39 @@ header {
       height: 80px;
       margin: auto;
       padding: 0 4%;
-      #mobile-menu {
-        display: block;
-        border: none;
-        font-size: 35px;
-        padding: 0;
+
+      label { 
+        display: inline-block; 
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
       }
+      
+      nav {
+        /* Break down menu items into vertical */
+        #nav_items {
+          li {
+            a {
+              box-sizing: border-box;
+              display: block;
+              width: 100%;
+              border-top: 1px solid #333;
+            }
+          }
+        }
+      
+        /* Toggle Show/Hide Menu */
+        #nav_items { display: none; }
+      }
+      #mobile-menu:checked ~ #nav_items { display: block; }
+      // #mobile-menu {
+      //   display: block;
+      //   border: none;
+      //   font-size: 35px;
+      //   padding: 0;
+      // }
     }
     .our_perevagis {
       padding: 0 20px;
