@@ -1,7 +1,4 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@charset "UTF-8";
 /* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,18 +64,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 7, ../sass/style.scss */
+@font-face {
+  font-family: "Gilroy Bold";
+  /* Имя шрифта */
+  src: url(../fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+/* line 20, ../sass/style.scss */
 html {
   scroll-behavior: smooth;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 header {
   background: url(/img/background__header.png) no-repeat;
   max-width: 1440px;
   margin: 0 auto;
 }
-/* line 15, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 header .header__contacts {
   display: flex;
   align-items: center;
@@ -87,7 +97,7 @@ header .header__contacts {
   color: #FFF;
   margin: auto;
 }
-/* line 22, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 header .header__contacts .contacts_social {
   width: 1280px;
   display: flex;
@@ -95,22 +105,21 @@ header .header__contacts .contacts_social {
   padding: 0 4%;
   margin: auto;
 }
-/* line 28, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 header .header__contacts .contacts_social .contacts {
   display: flex;
   justify-content: center;
   position: relative;
   width: 600px;
 }
-/* line 33, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 header .header__contacts .contacts_social .contacts .cellphones {
   display: flex;
 }
-/* line 35, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 header .header__contacts .contacts_social .contacts .cellphones .cellphone {
   font-family: Gilroy;
   color: #FFF;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -120,18 +129,18 @@ header .header__contacts .contacts_social .contacts .cellphones .cellphone {
   letter-spacing: -0.015em;
   padding: 0 24px;
 }
-/* line 50, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 header .header__contacts .contacts_social .contacts .social {
   position: absolute;
   top: 5px;
   right: 0;
 }
-/* line 55, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 header .header__contacts .contacts_social .contacts .social ul li {
   float: left;
   margin: 0 0 0 22px;
 }
-/* line 64, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 header .bloc_nav {
   display: flex;
   justify-content: space-between;
@@ -141,21 +150,20 @@ header .bloc_nav {
   margin: auto;
   padding: 0 4%;
 }
-/* line 73, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 header .bloc_nav .logo a {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy Bold";
   font-weight: 900;
   font-size: 24px;
   color: #FF9900;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 84, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 header .bloc_nav nav {
   width: 600px;
 }
-/* line 86, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 header .bloc_nav nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -164,25 +172,22 @@ header .bloc_nav nav ul {
   margin-bottom: 0;
   list-style: none;
 }
-/* line 94, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 header .bloc_nav nav ul li a {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   color: #FFF;
   text-decoration: none;
   letter-spacing: 0.07em;
 }
-/* line 104, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 header .bloc_nav nav ul li a:hover {
   color: #FF9900;
   border-bottom: 3px solid #FF9900;
 }
-/* line 112, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 header .bloc_nav button {
   font-family: Gilroy;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -197,52 +202,48 @@ header .bloc_nav button {
   padding: 8px 11px;
   cursor: pointer;
 }
-/* line 130, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 header .bloc_nav button:hover {
   border: 2px solid #FF9900;
 }
-/* line 134, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 header .bloc_nav #mobile-menu {
   display: none;
 }
-/* line 139, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 header .header_container {
   max-width: 1280px;
   margin: auto;
   padding: 0 4%;
 }
-/* line 143, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 header .header_container .row {
   max-width: 715px;
   margin: auto;
 }
-/* line 148, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 header .content {
   margin-top: 136px;
-  margin-bottom: 248px;
+  margin-bottom: 215px;
 }
-/* line 151, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 header .content h1 {
   font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: normal;
   font-size: 40px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
   color: #FFFFFF;
 }
-/* line 161, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 header .content p {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
   color: #FFFFFF;
   margin: 29px 0 71px;
 }
-/* line 172, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 header .content a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -259,7 +260,7 @@ header .content a.button {
   border: none;
   padding: 11px;
 }
-/* line 191, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 header .our_perevagis {
   display: flex;
   align-items: center;
@@ -270,17 +271,16 @@ header .our_perevagis {
   padding: 0 80px;
   border-top: 1px solid rgba(255, 255, 255, 0.46);
 }
-/* line 200, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 header .our_perevagis .perevagi {
   width: 15%;
   position: relative;
   display: flex;
   align-items: center;
 }
-/* line 205, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 header .our_perevagis .perevagi p {
   font-family: Gilroy;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 139.4%;
@@ -288,26 +288,26 @@ header .our_perevagis .perevagi p {
   color: #FFFFFF;
   width: 90%;
 }
-/* line 215, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 header .our_perevagis .perevagi svg {
   position: absolute;
   right: 0;
 }
 
 @media only screen and (max-width: 920px) {
-  /* line 225, ../sass/style.scss */
+  /* line 228, ../sass/style.scss */
   header .header__contacts {
     display: none;
   }
-  /* line 230, ../sass/style.scss */
+  /* line 233, ../sass/style.scss */
   header nav {
     display: none;
   }
-  /* line 234, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   header #order-a-call {
     display: none;
   }
-  /* line 238, ../sass/style.scss */
+  /* line 241, ../sass/style.scss */
   header .bloc_nav {
     display: flex;
     background: #0000004a;
@@ -318,41 +318,43 @@ header .our_perevagis .perevagi svg {
     margin: auto;
     padding: 0 4%;
   }
-  /* line 247, ../sass/style.scss */
+  /* line 250, ../sass/style.scss */
   header .bloc_nav #mobile-menu {
     display: block;
     border: none;
     font-size: 35px;
     padding: 0;
   }
-  /* line 254, ../sass/style.scss */
+  /* line 257, ../sass/style.scss */
   header .our_perevagis {
     padding: 0 20px;
   }
-  /* line 256, ../sass/style.scss */
+  /* line 259, ../sass/style.scss */
   header .our_perevagis .perevagi {
     width: 19%;
   }
 }
 @media only screen and (max-width: 769px) {
-  /* line 265, ../sass/style.scss */
+  /* line 268, ../sass/style.scss */
+  header .content {
+    margin-bottom: 218px;
+  }
+  /* line 271, ../sass/style.scss */
   header .our_perevagis {
     flex-flow: column;
     padding: 30px 20px;
     background: black;
     height: auto;
   }
-  /* line 270, ../sass/style.scss */
+  /* line 276, ../sass/style.scss */
   header .our_perevagis .perevagi {
     width: 70%;
     height: 120px;
   }
 }
-/* line 278, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 h4 {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 139.4%;
   letter-spacing: 9.7px;
@@ -360,24 +362,22 @@ h4 {
   color: #FF9900;
 }
 
-/* line 289, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 h2 {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Playfair Display";
   font-size: 40px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
 }
 
-/* line 299, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .about_us {
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
 }
-/* line 304, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .about_us .blokc-left {
   width: 37%;
   background: url(/img/bsckground__about_us.png) no-repeat bottom right;
@@ -385,9 +385,8 @@ h2 {
   height: 754px;
   position: relative;
 }
-/* line 310, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .about_us .blokc-left .experience {
-  width: 238px;
   display: inline-block;
   background: #FFB800;
   mix-blend-mode: normal;
@@ -396,41 +395,39 @@ h2 {
   right: 0;
   bottom: 0;
 }
-/* line 319, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .about_us .blokc-left .experience .number_of_years {
   font-size: 55px;
 }
-/* line 321, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .about_us .blokc-left .experience .number_of_years span {
   font-size: 70px;
   color: #FFF;
 }
-/* line 326, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .about_us .blokc-left .experience span {
   font-size: 70px;
   color: #FFF;
 }
-/* line 331, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .about_us .blokc-left .experience p {
   font-size: 36px;
   color: #FFF;
 }
-/* line 337, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 .about_us .blokc-right {
   width: 63%;
   background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
   padding: 148px 10% 0 187px;
 }
-/* line 342, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .about_us .blokc-right h2 {
   color: #000000;
   margin-bottom: 27px;
 }
-/* line 347, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .about_us .blokc-right p {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
@@ -439,7 +436,7 @@ h2 {
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 362, ../sass/style.scss */
+  /* line 361, ../sass/style.scss */
   .about_us .blokc-right {
     width: 63%;
     background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
@@ -447,11 +444,11 @@ h2 {
   }
 }
 @media only screen and (max-width: 769px) {
-  /* line 371, ../sass/style.scss */
+  /* line 370, ../sass/style.scss */
   .about_us {
     flex-flow: column;
   }
-  /* line 373, ../sass/style.scss */
+  /* line 372, ../sass/style.scss */
   .about_us .blokc-left {
     background-size: 100%;
     block-size: 100%;
@@ -460,7 +457,7 @@ h2 {
     position: absolute;
     background: none;
   }
-  /* line 381, ../sass/style.scss */
+  /* line 380, ../sass/style.scss */
   .about_us .blokc-right {
     width: 80%;
     background: url(/img/bsckground__about_us_2.png) no-repeat right bottom;
@@ -468,16 +465,16 @@ h2 {
   }
 }
 @media only screen and (max-width: 574px) {
-  /* line 391, ../sass/style.scss */
+  /* line 390, ../sass/style.scss */
   .about_us .blokc-left {
     display: none;
   }
-  /* line 395, ../sass/style.scss */
+  /* line 394, ../sass/style.scss */
   .about_us .blokc-right {
     padding: 100px 10% 45px;
   }
 }
-/* line 401, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 .stages_of_work {
   display: flex;
   justify-content: space-between;
@@ -485,16 +482,20 @@ h2 {
   margin: 0 auto;
   flex-flow: column;
   background: #000000;
-  padding: 65px 168px 126px;
+  padding: 65px 0 126px;
   color: #ffffff;
 }
-/* line 410, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
+.stages_of_work .conteiner {
+  padding: 0 165px;
+}
+/* line 412, ../sass/style.scss */
 .stages_of_work .stages_numbers {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-/* line 414, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 .stages_of_work .stages_numbers .stage_line {
   border-bottom: 3px solid #fff;
   width: 91%;
@@ -502,15 +503,13 @@ h2 {
   position: absolute;
   top: 60px;
 }
-/* line 421, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 .stages_of_work .stages_numbers .stage {
   width: 160px;
 }
-/* line 423, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 .stages_of_work .stages_numbers .stage p {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.2px;
   line-height: 1.5;
@@ -532,18 +531,16 @@ h2 {
   border: 20px solid transparent;
   text-align: center;
   width: 100%;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Playfair Display";
   font-size: 40px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 457, ../sass/style.scss */
-  .stages_of_work {
-    padding: 65px 10px 126px;
+  /* line 456, ../sass/style.scss */
+  .stages_of_work .conteiner {
+    padding: 0px 10px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -552,15 +549,19 @@ h2 {
     padding: 65px 4% 76px;
   }
   /* line 465, ../sass/style.scss */
+  .stages_of_work .conteiner {
+    padding: 0;
+  }
+  /* line 468, ../sass/style.scss */
   .stages_of_work h4, .stages_of_work h2 {
     text-align: center;
   }
-  /* line 468, ../sass/style.scss */
+  /* line 471, ../sass/style.scss */
   .stages_of_work .stages_numbers {
     flex-flow: column;
     margin-top: 40px;
   }
-  /* line 471, ../sass/style.scss */
+  /* line 474, ../sass/style.scss */
   .stages_of_work .stages_numbers .stage_line {
     border-bottom: 3px solid #fff;
     width: 3px;
@@ -571,56 +572,53 @@ h2 {
     top: 60px;
     left: 35px;
   }
-  /* line 481, ../sass/style.scss */
+  /* line 484, ../sass/style.scss */
   .stages_of_work .stages_numbers .stage {
     display: flex;
     align-items: center;
     width: 100%;
   }
-  /* line 485, ../sass/style.scss */
+  /* line 488, ../sass/style.scss */
   .stages_of_work .stages_numbers .stage p {
     font-size: 18px;
-    max-width: 190px;
+    max-width: 175px;
   }
 }
-/* line 494, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 .portfolio {
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 100px;
   background: url(/img/background__portfolio.png) no-repeat 260px bottom;
 }
-/* line 499, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .portfolio h4, .portfolio h2 {
   text-align: center;
 }
-/* line 503, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 .portfolio .works {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
 }
-/* line 508, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .portfolio .works .about_the_project {
   width: 41%;
   margin: 0 20px 0 150px;
 }
-/* line 511, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .portfolio .works .about_the_project h5 {
   font-family: Gilroy;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
   color: #000000;
 }
-/* line 521, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 .portfolio .works .about_the_project p {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
@@ -757,8 +755,8 @@ h2 {
 }
 /* line 662, ../sass/style.scss */
 .reviews .slider .comments span {
+  font-family: Gilroy;
   padding-top: 180px;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -770,8 +768,8 @@ h2 {
 }
 /* line 675, ../sass/style.scss */
 .reviews .slider p {
+  font-family: Gilroy;
   margin-bottom: 20px;
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -799,7 +797,7 @@ h2 {
 }
 /* line 701, ../sass/style.scss */
 .reviews .slider .slider_buttons a:hover {
-  color: #FFB800;
+  color: #FF9900;
 }
 /* line 706, ../sass/style.scss */
 .reviews .slider .slider_buttons ul .tns-nav-active {
@@ -867,24 +865,23 @@ h2 {
 }
 /* line 775, ../sass/style.scss */
 #contact-us .form h3 {
-  font-family: Playfair Display;
-  font-style: normal;
+  font-family: "Playfair Display";
   font-weight: bold;
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 10px;
 }
-/* line 784, ../sass/style.scss */
+/* line 783, ../sass/style.scss */
 #contact-us .form p {
   margin-bottom: 42px;
 }
-/* line 789, ../sass/style.scss */
+/* line 788, ../sass/style.scss */
 #contact-us .form form .inputs {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-/* line 793, ../sass/style.scss */
+/* line 792, ../sass/style.scss */
 #contact-us .form form .inputs input {
   width: 45%;
   background: none;
@@ -893,7 +890,7 @@ h2 {
   padding: 7px;
   color: #fff;
 }
-/* line 803, ../sass/style.scss */
+/* line 802, ../sass/style.scss */
 #contact-us .form form .textarea {
   padding: 7px;
   height: 31px;
@@ -904,13 +901,14 @@ h2 {
   border-bottom: 1px solid #fff;
   color: #fff;
 }
-/* line 815, ../sass/style.scss */
+/* line 814, ../sass/style.scss */
 #contact-us .form button {
   margin-top: 42px;
   padding: 10px 22px;
   background-color: #fff;
   border: none;
   color: #FF9900;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 750px) {
@@ -972,7 +970,7 @@ footer .footer_widgets .description_widget {
 /* line 878, ../sass/style.scss */
 footer .footer_widgets .description_widget .logo {
   text-transform: uppercase;
-  font-family: Gilroy;
+  font-family: "Gilroy Bold";
   font-weight: 900;
   font-size: 24px;
   line-height: 80px;
@@ -981,7 +979,7 @@ footer .footer_widgets .description_widget .logo {
 }
 /* line 888, ../sass/style.scss */
 footer .footer_widgets .description_widget .description {
-  font-style: normal;
+  font-family: Gilroy;
   font-weight: 300;
   font-size: 16px;
   line-height: 25px;
@@ -1011,11 +1009,15 @@ footer .contact_us_widget {
   flex-direction: column;
   padding-bottom: 13px;
 }
-/* line 923, ../sass/style.scss */
+/* line 919, ../sass/style.scss */
+footer .contact_us_widget .ua {
+  font-family: "Gilroy Bold";
+}
+/* line 926, ../sass/style.scss */
 footer .social_widget ul li {
   margin-top: 20px;
 }
-/* line 929, ../sass/style.scss */
+/* line 932, ../sass/style.scss */
 footer .rights_protected {
   font-size: 14px;
   border-top: 1px solid;
@@ -1025,72 +1027,95 @@ footer .rights_protected {
   padding: 14px 0 16px;
   margin-top: 90px;
 }
+/* line 940, ../sass/style.scss */
+footer .rights_protected .container {
+  width: 1280px;
+  margin: 0 0px 0 160px;
+}
 
 @media only screen and (max-width: 1024px) {
-  /* line 941, ../sass/style.scss */
+  /* line 948, ../sass/style.scss */
   footer .footer_widgets {
     margin: 0 4%;
   }
-  /* line 943, ../sass/style.scss */
+  /* line 950, ../sass/style.scss */
   footer .footer_widgets .widget, footer .footer_widgets .description_widget, footer .footer_widgets .contact_us_widget {
     width: 27%;
   }
+  /* line 954, ../sass/style.scss */
+  footer .rights_protected {
+    text-align: center;
+  }
+  /* line 956, ../sass/style.scss */
+  footer .rights_protected p {
+    width: 100%;
+  }
+  /* line 959, ../sass/style.scss */
+  footer .rights_protected .container {
+    width: 92%;
+    padding: 0 4%;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 750px) {
-  /* line 951, ../sass/style.scss */
+  /* line 969, ../sass/style.scss */
   footer {
     padding: 45px 0 0;
     text-align: center;
   }
-  /* line 954, ../sass/style.scss */
+  /* line 972, ../sass/style.scss */
   footer .footer_widgets {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: none;
   }
-  /* line 958, ../sass/style.scss */
+  /* line 976, ../sass/style.scss */
   footer .footer_widgets .widget, footer .footer_widgets .description_widget,
   footer .footer_widgets .contact_us_widget, footer .footer_widgets .social_widget {
     width: 40%;
   }
-  /* line 962, ../sass/style.scss */
+  /* line 980, ../sass/style.scss */
   footer .footer_widgets .contact_us_widget {
     display: flex;
     align-items: center;
   }
-  /* line 967, ../sass/style.scss */
+  /* line 985, ../sass/style.scss */
   footer .rights_protected {
     text-align: center;
   }
-  /* line 969, ../sass/style.scss */
+  /* line 987, ../sass/style.scss */
   footer .rights_protected p {
     width: 100%;
   }
 }
 @media only screen and (max-width: 574px) {
-  /* line 977, ../sass/style.scss */
+  /* line 995, ../sass/style.scss */
   footer {
     padding: 45px 0 0;
     text-align: center;
   }
-  /* line 980, ../sass/style.scss */
+  /* line 998, ../sass/style.scss */
   footer .footer_widgets {
     flex-direction: column;
     align-items: center;
   }
-  /* line 984, ../sass/style.scss */
+  /* line 1002, ../sass/style.scss */
   footer .footer_widgets .social_widget ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
   }
-  /* line 991, ../sass/style.scss */
+  /* line 1009, ../sass/style.scss */
   footer .footer_widgets .footer__nav {
     margin: 0px 0 20px;
   }
-  /* line 995, ../sass/style.scss */
+  /* line 1013, ../sass/style.scss */
   footer .footer_widgets .widget, footer .footer_widgets .description_widget,
   footer .footer_widgets .contact_us_widget, footer .footer_widgets .social_widget {
     width: 70%;
+  }
+  /* line 1018, ../sass/style.scss */
+  footer .rights_protected {
+    margin-top: 40px;
   }
 }

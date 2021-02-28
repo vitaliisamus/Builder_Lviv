@@ -1,16 +1,29 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+$base-color: #FF9900;
+$background-color: #FFB800;
+$max-w-monitors: 1440px;
+$w-cont: 1280px;
 
 @import "compass/reset";
+@font-face {
+  font-family: "Gilroy Bold"; /* Имя шрифта */
+  src: url(../fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 header {
   background: url(/img/background__header.png) no-repeat;
-  max-width: 1440px;
+  max-width: $max-w-monitors;
   margin: 0 auto;
   .header__contacts {
     display: flex;
@@ -20,7 +33,7 @@ header {
     color: #FFF;
     margin: auto;
     .contacts_social {
-      width: 1280px;
+      width: $w-cont;
       display: flex;
       justify-content: flex-end;
       padding: 0 4%;
@@ -35,7 +48,6 @@ header {
           .cellphone {
             font-family: Gilroy;
             color: #FFF;
-            font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
@@ -65,17 +77,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1280px;
+    max-width: $w-cont;
     height: 80px;
     margin: auto;
     padding: 0 4%;
     .logo {
       a {
-        font-family: Gilroy;
-        font-style: normal;
+        font-family: "Gilroy Bold";
         font-weight: 900;
         font-size: 24px;
-        color: #FF9900;
+        color: $base-color;
         text-transform: uppercase;
         text-decoration: none;
       }
@@ -93,8 +104,6 @@ header {
         li {
           a {
             font-family: Gilroy;
-            font-style: normal;
-            font-weight: normal;
             font-size: 18px;
             color: #FFF;
             text-decoration: none;
@@ -102,8 +111,8 @@ header {
           }
 
           a:hover {
-            color: #FF9900;
-            border-bottom: 3px solid #FF9900;
+            color: $base-color;
+            border-bottom: 3px solid $base-color;
           }
         }
       }
@@ -111,7 +120,6 @@ header {
 
     button {
       font-family: Gilroy;
-      font-style: normal;
       font-weight: bold;
       font-size: 16px;
       line-height: 19px;
@@ -119,16 +127,16 @@ header {
       align-items: center;
       text-align: center;
       letter-spacing: -0.015em;
-      color: #FF9900;
+      color: $base-color;
       background: none;
-      border: 2px solid #FF9900;
+      border: 2px solid $base-color;
       box-sizing: border-box;
       padding: 8px 11px;
       cursor: pointer;
     }
 
     button:hover {
-      border: 2px solid #FF9900;
+      border: 2px solid $base-color;
     }
 
     #mobile-menu {
@@ -137,7 +145,7 @@ header {
   }
 
   .header_container {
-    max-width: 1280px;
+    max-width: $w-cont;
     margin: auto;
     padding: 0 4%;
     .row {
@@ -147,11 +155,9 @@ header {
   }
   .content {
     margin-top: 136px;
-    margin-bottom: 248px;
+    margin-bottom: 215px;
     h1 {
       font-family: "Playfair Display";
-      font-style: normal;
-      font-weight: normal;
       font-size: 40px;
       line-height: 139.4%;
       letter-spacing: 0.2px;
@@ -160,8 +166,6 @@ header {
 
     p {
       font-family: Gilroy;
-      font-style: normal;
-      font-weight: normal;
       font-size: 18px;
       line-height: 139.4%;
       letter-spacing: 0.2px;
@@ -182,7 +186,7 @@ header {
       text-align: center;
       letter-spacing: -0.015em;
       color: #FFFFFF;
-      background: #FF9900;
+      background: $base-color;
       border: none;
       padding: 11px;
     }
@@ -204,7 +208,6 @@ header {
       align-items: center;
       p {
         font-family: Gilroy;
-        font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 139.4%;
@@ -240,7 +243,7 @@ header {
       background: #0000004a;
       justify-content: space-between;
       align-items: center;
-      max-width: 1280px;
+      max-width: $w-cont;
       height: 80px;
       margin: auto;
       padding: 0 4%;
@@ -262,6 +265,9 @@ header {
 
 @media only screen and (max-width: 769px)  {
   header {
+    .content {
+      margin-bottom: 218px;
+    }
     .our_perevagis {
       flex-flow: column;
       padding: 30px 20px;
@@ -277,19 +283,15 @@ header {
 
 h4 {
   font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 139.4%;
   letter-spacing: 9.7px;
   text-transform: uppercase;
-  color: #FF9900;
+  color: $base-color;
 }
 
 h2 {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Playfair Display";
   font-size: 40px;
   line-height: 139.4%;
   letter-spacing: 0.2px;
@@ -299,7 +301,7 @@ h2 {
 .about_us {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: $max-w-monitors;
   margin: 0 auto;
   .blokc-left {
     width: 37%;
@@ -308,9 +310,8 @@ h2 {
     height: 754px;
     position: relative;
     .experience {
-      width: 238px;
       display: inline-block;
-      background: #FFB800;
+      background: $background-color;
       mix-blend-mode: normal;
       padding: 34px;
       position: absolute;
@@ -346,8 +347,6 @@ h2 {
 
     p {
       font-family: Gilroy;
-      font-style: normal;
-      font-weight: normal;
       font-size: 18px;
       line-height: 139.4%;
       letter-spacing: 0.2px;
@@ -401,12 +400,15 @@ h2 {
 .stages_of_work {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: $max-w-monitors;
   margin: 0 auto;
   flex-flow: column;
   background: #000000;
-  padding: 65px 168px 126px;
+  padding: 65px 0 126px;
   color: #ffffff;
+  .conteiner {
+    padding: 0 165px;
+  }
   .stages_numbers {
     position: relative;
     display: flex;
@@ -422,8 +424,6 @@ h2 {
       width: 160px;
       p {
         font-family: Gilroy;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         letter-spacing: 0.2px;
         line-height: 1.5;
@@ -443,9 +443,7 @@ h2 {
         border:20px solid transparent;
         text-align: center;
         width: 100%;
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: normal;
+        font-family: "Playfair Display";
         font-size: 40px;
         line-height: 139.4%;
         letter-spacing: 0.2px;
@@ -455,13 +453,18 @@ h2 {
 }
 @media only screen and (max-width:1024px) {
   .stages_of_work {
-    padding: 65px 10px 126px;
+    .conteiner {
+      padding: 0px 10px;
+    }
   }
 }
 
 @media only screen and (max-width:750px) {
   .stages_of_work {
     padding: 65px 4% 76px;
+    .conteiner {
+      padding: 0;
+    }
     h4, h2 {
       text-align: center;
     }
@@ -484,7 +487,7 @@ h2 {
         width: 100%;
         p {
           font-size: 18px;
-          max-width: 190px;
+          max-width: 175px;
         }
       }
     }
@@ -492,7 +495,7 @@ h2 {
 }
 
 .portfolio {
-  max-width: 1440px;
+  max-width: $max-w-monitors;
   margin: 0 auto;
   padding-top: 100px;
   background: url(/img/background__portfolio.png) no-repeat 260px  bottom ;
@@ -510,7 +513,6 @@ h2 {
       margin: 0 20px 0 150px;
       h5 {
         font-family: Gilroy;
-        font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 139.4%;
@@ -520,8 +522,6 @@ h2 {
 
       p {
         font-family: Gilroy;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
         line-height: 139.4%;
         letter-spacing: 0.2px;
@@ -560,7 +560,7 @@ h2 {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        background: #FFB800;
+        background: $background-color;
         height: 94px;
         ul {
           .tns-nav-active {
@@ -646,7 +646,7 @@ h2 {
 }
 
 .reviews {
-  max-width: 1440px;
+  max-width: $max-w-monitors;
   margin: 0 auto;
   background:url(../img/background_reviews.png) no-repeat center;
   .slider {
@@ -660,8 +660,8 @@ h2 {
     .comments {
       margin-bottom: 75px;
       span {
+        font-family: Gilroy;
         padding-top: 180px;
-        font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
@@ -673,8 +673,8 @@ h2 {
     }
 
     p {
+      font-family: Gilroy;
       margin-bottom: 20px;
-      font-style: normal;
       font-weight: 300;
       font-size: 16px;
       line-height: 18px;
@@ -699,12 +699,12 @@ h2 {
         color: #fff;
       }
       a:hover {
-        color: #FFB800;
+        color: $base-color;
       }
       
       ul {
         .tns-nav-active {
-          background: #FF9900;
+          background: $base-color;
           width: 9px;
           height: 9px;
         }
@@ -764,8 +764,8 @@ h2 {
 }
 
 #contact-us {
-  background: #FFB800;
-  max-width: 1440px;
+  background: $background-color;
+  max-width: $max-w-monitors;
   margin: 0 auto;
   padding: 45px 0 52px;
   color: #FFFFFF;
@@ -773,8 +773,7 @@ h2 {
     width: 50%;
     margin: auto;
     h3 {
-      font-family: Playfair Display;
-      font-style: normal;
+      font-family: "Playfair Display";
       font-weight: bold;
       font-size: 30px;
       line-height: 40px;
@@ -817,7 +816,8 @@ h2 {
       padding: 10px 22px;
       background-color: #fff;
       border: none;
-      color: #FF9900;
+      color: $base-color;
+      cursor: pointer;
     }
   }
 }
@@ -860,7 +860,7 @@ h2 {
 }
 
 footer {
-  max-width: 1440px;
+  max-width: $max-w-monitors;
   margin: 0 auto;
   background-color: #000;
   padding: 114px 0 0;
@@ -877,16 +877,16 @@ footer {
       padding-bottom: 13px;
       .logo {
         text-transform: uppercase;
-        font-family: Gilroy;
+        font-family: "Gilroy Bold";
         font-weight: 900;
         font-size: 24px;
         line-height: 80px;
         letter-spacing: 0.07em;
-        color: #FF9900;
+        color: $base-color;
       }
       
       .description {
-        font-style: normal;
+        font-family: Gilroy;
         font-weight: 300;
         font-size: 16px;
         line-height: 25px;
@@ -916,6 +916,9 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     padding-bottom: 13px;
+    .ua {
+      font-family: "Gilroy Bold";
+    }
   }
 
   .social_widget {
@@ -934,6 +937,10 @@ footer {
     color: rgba(255, 255, 255, 0.29);
     padding: 14px 0 16px;
     margin-top: 90px;
+    .container {
+      width: $w-cont;
+      margin: 0 0px 0 160px;
+    }
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -942,6 +949,17 @@ footer {
       margin: 0 4%;
       .widget, .description_widget, .contact_us_widget {
         width: 27%;
+      }
+    }
+    .rights_protected {
+      text-align: center;
+      p {
+        width: 100%;
+      }
+      .container {
+        width: 92%;
+        padding: 0 4%;
+        margin: auto;
       }
     }
   }
@@ -996,6 +1014,9 @@ footer {
       .contact_us_widget, .social_widget {
         width: 70%;
       }
+    }
+    .rights_protected {
+      margin-top: 40px;
     }
   }
 }
