@@ -245,21 +245,23 @@ header {
       label { 
         display: inline-block; 
         color: white;
-        background: #a02620;
+        background: none;
         font-style: normal;
-        font-size: 1.2em;
-        padding: 10px;
+        font-size: 35px;
+        padding: 0;
       }
       
       nav {
         /* Break down menu items into vertical */
         #nav_items {
+          position: absolute;
           li {
             a {
-              box-sizing: border-box;
-              display: block;
-              width: 100%;
-              border-top: 1px solid #333;
+              width: 20%; /* 100% / 5 tabs = 20% */
+              padding: 10px;
+              color: white;
+              text-decoration: none;
+              text-align: center;
             }
           }
         }
@@ -268,12 +270,6 @@ header {
         #nav_items { display: none; }
       }
       #mobile-menu:checked ~ #nav_items { display: block; }
-      // #mobile-menu {
-      //   display: block;
-      //   border: none;
-      //   font-size: 35px;
-      //   padding: 0;
-      // }
     }
     .our_perevagis {
       padding: 0 20px;
